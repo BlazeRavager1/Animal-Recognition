@@ -38,23 +38,30 @@ function gotResults(error, results) {
         if (results[0].label == "dog") {
             img.src = "dog.gif";
             dog = dog + 1;
-
+        console.log("The sound you are making is of a dog");
 
         } else if (results[0].label == "cat") {
             img.src = "cat.gif";
             cat = cat + 1;
 
+        console.log("The sound you are making is of a cat");
         }
         else if (results[0].label == "cow") {
             img.src = "cow.gif";
             cow = cow + 1
+            
+        console.log("The sound you are making is of a cow");
         }
         else if (results[0].label == "lion") {
             img.src = "lion.gif";
             lion = lion + 1;
+            
+        console.log("The sound you are making is of a lion");
             }
         else {
             img.src = "https://media.tenor.com/kKmvIr30vQYAAAAi/stars-changing-colors.gif"
+            
+        console.log("You are not currently making any animal sound");
         }
     }
 
